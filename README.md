@@ -29,7 +29,9 @@ This project replaces manual spreadsheet reporting with an automated, predictive
 * **The System:** Trained a Random Forest Regressor to predict continuous monthly sales based on operational variables (Footfall, Staffing, Spend, Discounts). 
 * **The Impact:** Achieved a high predictive accuracy ($R^2 = 0.753$). Extracted Gini feature importance to prove that Physical Footfall drives 74.67% of revenue, rendering the current discount strategy mathematically irrelevant.
 
-### 4. Agentic AI Intelligence Layer
-* **The Problem:** Static dashboards require manual slicing and bottleneck decision-making.
-* **The System:** Deployed a self-correcting LangChain Pandas DataFrame Agent powered by Google Gemini. 
-* **The Impact:** Stakeholders can query the final operational dataset in natural language. The agent dynamically generates Python code, executes it against the local environment, and returns synthesized statistical answers instantly.
+### 4. BI Dashboard Delivery & Conversational AI Integration
+* **The Problem:** Traditional BI tools rely on rigid, pre-built visual slices that bottleneck ad-hoc exploratory analysis.
+* **The System:** Utilized `dashboard_sales_data.xlsx` (4,200 operational records) as a dual-purpose asset:
+  1. *Descriptive Layer:* Connected to Power BI for standard executive historical visibility, tracking KPIs and category-level trends (notably identifying that the *Furniture* category carries the highest return rate at 7.67% despite a stable 4.03 average customer rating).
+  2. *Conversational Layer:* Wrapped the identical dataset in an autonomous LangChain Pandas DataFrame Agent powered by Google Gemini.
+* **The Impact:** Satisfied traditional reporting requirements while pioneering a conversational interface, allowing stakeholders to query raw operational data in natural language and receive real-time, programmatic Python-driven answers.
