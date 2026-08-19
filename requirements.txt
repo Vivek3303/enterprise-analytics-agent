@@ -1,0 +1,1 @@
+pandas, numpy, scipy, scikit-learn, matplotlib, seaborn, langchain, langchain-google-genai, langchain-experimental, tabulate, openpyxl.
