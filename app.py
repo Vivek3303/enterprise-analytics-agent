@@ -25,7 +25,7 @@ if api_key:
         
         # Initialize the AI Engine
         os.environ["GOOGLE_API_KEY"] = api_key
-        llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0)
+        llm = ChatGoogleGenerativeAI(model="gemini-3.6-flash", temperature=0)
         
         agent = create_pandas_dataframe_agent(
             llm, 
