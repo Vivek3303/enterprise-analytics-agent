@@ -35,6 +35,13 @@ if api_key:
             agent_executor_kwargs={"handle_parsing_errors": True}
         )
         st.sidebar.success("Engine Online. Ready for queries.")
+
+        # Sample Queries UI
+        st.markdown("### 💡 Try These Live Queries:")
+        st.markdown("> *\"Which product category has the highest return flag rate, and what is its average customer rating?\"*")
+        st.markdown("> *\"Calculate the total revenue generated across all categories.\"*")
+        st.markdown("> *\"What is the correlation between marketing spend and monthly sales?\"*")
+        st.markdown("---")
         
         # User Interface
         query = st.text_input("Enter your analytical query:")
