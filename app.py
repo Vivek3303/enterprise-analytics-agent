@@ -21,7 +21,7 @@ with st.sidebar:
 if api_key:
     try:
         # Load the data
-        df = pd.read_excel('dashboard_sales_data.xlsx', sheet_name='dashboard_sales_data')
+        df = pd.read_excel('data\dashboard_sales_data.xlsx', sheet_name='dashboard_sales_data')
         
         # Initialize the AI Engine
         os.environ["GOOGLE_API_KEY"] = api_key
